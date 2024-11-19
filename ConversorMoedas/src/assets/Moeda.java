@@ -1,8 +1,22 @@
 package assets;
 
 import com.google.gson.annotations.SerializedName;
+import java.util.Map;
 
 public class Moeda {
+
+    @SerializedName("base_code")
+    private String baseCode;
+
+    @SerializedName("time_last_update_utc")
+    private String UltimaAtualizacao;
+
+    private String valorAtual;
+
+    @SerializedName("conversion_rates")
+    private Map<String, Double> taxasDeConversao; // Corrigido para Map
+
+    // Getters e Setters
     public String getBaseCode() {
         return baseCode;
     }
@@ -15,7 +29,7 @@ public class Moeda {
         return valorAtual;
     }
 
-    public String getTaxasDeConversão() {
+    public Map<String, Double> getTaxasDeConversao() {
         return taxasDeConversao;
     }
 
@@ -31,7 +45,7 @@ public class Moeda {
         this.valorAtual = valorAtual;
     }
 
-    public void setTaxasDeConversao(String taxasDeConversao) {
+    public void setTaxasDeConversao(Map<String, Double> taxasDeConversao) {
         this.taxasDeConversao = taxasDeConversao;
     }
 
@@ -39,18 +53,10 @@ public class Moeda {
     public String toString() {
         return
                 "_".repeat(20) + "\n" +
-                "Código da Moeda = " + baseCode + "\n" +
-                "Ultima Atualizacao = " + UltimaAtualizacao + "\n" +
-                "valor Atual = " + valorAtual + "\n" +
-                "taxas De Conversão = " + taxasDeConversao + "\n" +
-                "_".repeat(20);
+                        "Código da Moeda = " + baseCode + "\n" +
+                        "Última Atualização = " + UltimaAtualizacao + "\n" +
+                        "Valor Atual = " + valorAtual + "\n" +
+                        "Taxas de Conversão = " + taxasDeConversao + "\n" +
+                        "_".repeat(20);
     }
-
-    @SerializedName("base_code")
-    String baseCode;
-
-    @SerializedName("time_last_update_utc")
-    String UltimaAtualizacao;
-    String valorAtual;
-    String taxasDeConversao;
 }

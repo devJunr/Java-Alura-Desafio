@@ -20,15 +20,14 @@ public class Menu {
 
     System.out.print(
         """
-
-                    1. Dolar Para Real
-                    2. Real Para Dolar
-                    3. Euro Para Dolar
-                    4. Dolar Para Euro
-                    5. Libra Para Real
-                    6. Libra Para Dolar
-                    7. Fechar
-                    ▼
-                    """);
+       1. Dólar para Real (USD -> BRL)
+       2. Real para Dólar (BRL -> USD)
+       3. Manat Azeri para Real (AZN -> BRL)
+       4. Lempira Hondurenha para Real (HNL -> BRL)
+       5. Euro para Real (EUR -> BRL)
+       6. Libras Esterlinas para Real (GBP -> BRL)
+       7. Fechar
+       ▼
+        """);
   }
 }
