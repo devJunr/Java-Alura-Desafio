@@ -31,7 +31,7 @@ Este projeto foi desenvolvido com o objetivo de aprimorar habilidades em Java, a
 
 3. **Adicione a dependência Gson**:  
 
-   - Faça o download da biblioteca Gson na versão **2.11.0** (disponível no site do Maven ou no repositório oficial).  
+   - Faça o download da biblioteca Gson na versão **2.11.0** (disponível no site do Maven ou no repositório oficial). Ou adicione a mesma que está no diretorio: dependencias , no projeto.  
    - Adicione a biblioteca ao projeto no IntelliJ:  
      - Clique com o botão direito no projeto > `Add Library...` > Escolha o arquivo `.jar` baixado.
 
@@ -56,7 +56,7 @@ Este projeto foi desenvolvido com o objetivo de aprimorar habilidades em Java, a
 
 ## **Pré-Requisitos**  
 
-- Java 21 ou superior.  
+- Java 23 ou superior.  
 - IntelliJ IDEA ou outro editor para gerenciar dependências.  
 - Biblioteca Gson versão **2.11.0** adicionada ao projeto.  
 - Conexão com a internet.  
@@ -78,10 +78,10 @@ Escolha um valor e digite seu respectivo valor
 Dólar Para Real  
 Digite o valor em Dólar para converter para Real: USD$2  
 -> AGUARDE  
----------------  
+​---------------  
 Taxa de conversão de USD para BRL  
 USD$ 2.0 => BRL$ 11.5308  
----------------  
+​---------------  
 Deseja realizar outra conversão? (S para Sim, N para Não)  
 s  
 --== CONVERSOR DE MOEDAS ==--  
@@ -98,10 +98,10 @@ Escolha um valor e digite seu respectivo valor
 Real Para Dólar  
 Digite o valor em Real para converter para Dólar: BRL$10  
 -> AGUARDE  
----------------  
+​---------------  
 Taxa de conversão de BRL para USD  
 BRL$ 10.0 => USD$ 1.73  
----------------  
+​---------------  
 Deseja realizar outra conversão? (S para Sim, N para Não)  
 n  
 ```
