@@ -2,6 +2,7 @@ package assets;
 
 public class Menu {
   public static void showMenu(String tituloMenu, String fraseAlerta) {
+
     if (tituloMenu == null) {
       System.out.println("--== CONVERSOR DE MOEDAS ==--");
       menuOpcoes(fraseAlerta);
